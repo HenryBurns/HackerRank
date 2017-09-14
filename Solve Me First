@@ -1,0 +1,26 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    static int solveMeFirst(int a, int b) {
+    return a+b; 
+        //returns the sum of a and b
+
+   }
+
+   
+ public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int a = in.nextInt();
+        int b = in.nextInt();
+     //assign values from scanner to a and b
+        int sum = solveMeFirst(a, b);
+     //return the value of the two numbers summed
+        System.out.println(sum);
+     //print ansr
+   }
+}
