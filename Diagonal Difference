@@ -1,0 +1,32 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int n = in.nextInt(); // get 2d array size
+        int a[][] = new int[n][n];
+        for(int a_i=0; a_i < n; a_i++){
+            for(int a_j=0; a_j < n; a_j++){
+                a[a_i][a_j] = in.nextInt();
+            }} // fill 2d warray with input
+            
+            
+        
+        int i = 0;
+        int stDiag = 0; //variable for first diag
+        int ndDiag = 0; // variable for 2nd diag
+        int qr = a[0].length -1;
+        while(  i < a.length )
+            {
+            stDiag += a[i][i];
+                ndDiag += a[i][qr - i];
+        i++;
+                                } // go through the full array with diag
+                                System.out.print(Math.abs(stDiag - ndDiag)); //print ansr
+        }
+        }
